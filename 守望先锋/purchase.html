@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>购买游戏</title>
+		<link rel="stylesheet" href="css/purchase.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<script type="text/javascript" src="js/purchase.js"></script>
+		<link rel="stylesheet" href="https://at.alicdn.com/t/font_2080438_mpa3ldsohh.css" />
+	</head>
+
+	<body>
+		<header class="top_nav">
+			<nav class="blue_nav">
+				<a href="#" class="top_logo"></a>
+				<div class="topNav_items">
+					<a href="store.html" target="_blank" class="topNav_shop">
+						<span>商城</span>
+					</a>
+				</div>
+				<div class="topNav_right">
+					<a href="#" class="topNav_support">
+						<span>支持</span>
+					</a>
+					<a href="#" class="topNav_pass">
+						<span>我的账户</span>
+						<span class="topIconClick">
+							<i class="iconfont iconarrow-down"></i>
+						</span>
+					</a>
+				</div>
+			</nav>
+			<nav class="next_nav">
+				<ul>
+					<li class="ul_item">
+						<a href="main.html" target="_blank">
+							<span>
+								<i class="iconfont iconzhuye"></i>
+							</span>
+							<span>主页</span>
+						</a>
+					</li>
+					<li class="ul_item">
+						<a class="active nav_btn">
+							<span>游戏</span>
+							<span class="topIconClick">
+								<i class="iconfont iconarrow-down"></i>
+							</span>
+						</a>
+						<ul class="menu_games">
+							<li style="margin-left: 10px;">暴雪游戏</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/world-of-warcraft.svg" />
+									<span>魔兽世界</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/overwatch.svg" />
+									<span>守望先锋</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/diablo-iii.svg" />
+									<span>暗黑破坏神|||</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/hearthstone.svg" />
+									<span>炉石传说</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/heroes-of-the-storm.svg" />
+									<span>风暴英雄</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/starcraft-ii.svg" />
+									<span>星际争霸||</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/starcraft-remastered.svg" />
+									<span>星际争霸</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/warcraft-iii.svg" />
+									<span>魔兽争霸|||</span>
+								</a>
+							</li>
+						</ul>
+
+					</li>
+					<li class="ul_item">
+						<a class="active nav_btn">
+							<span>服务</span>
+							<span class="topIconClick">
+								<i class="iconfont iconarrow-down"></i>
+							</span>
+						</a>
+						<ul class="menu_games">
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<span>
+										<i class="iconfont iconbiaoqian"></i>
+									</span>
+									<span>战网昵称修改服务</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<span>
+										<i class="iconfont iconjia"></i>
+									</span>
+									<span>使用兑换码</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="ul_item">
+						<a href="#">
+							<span>周边商城</span>
+							<span class="topIconClick">
+								<i class="iconfont iconfenxiang"></i>
+							</span>
+						</a>
+					</li>
+					<li class="ul_item search">
+						<a href="#" id="text">
+							<span>
+								<i class="iconfont iconsousuo"></i>
+							</span>
+							<input placeholder="搜索商城 " />
+						</a>
+					</li>
+					<li class="ul_item">
+						<a href="#">
+							<span>
+								<i class="iconfont iconxinyuan"></i>
+							</span>
+							<span>心愿单</span>
+						</a>
+					</li>
+					<li class="ul_item">
+						<a class="active nav_btn">
+							<span>暴雪游戏点数</span>
+							<span class="topIconClick">
+								<i class="iconfont iconarrow-down "></i>
+							</span>
+						</a>
+						<ul class="menu_games ">
+							<li class="li_logo ">
+								<a href="#" class="games_con">
+									<span>
+										<i class="iconfont iconjia"></i>
+									</span>
+									<span>充值点数</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<span>
+										<i class="iconfont iconfenxiang1"></i>
+									</span>
+									<span>赠送点数</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<span>
+										<i class="iconfont iconduihuan "></i>
+									</span>
+									<span>兑换点卡</span>
+								</a>
+							</li>
+							<li class="li_logo ">
+								<a href="#" class="games_con ">
+									<span>
+										<i class="iconfont iconlishi1 "></i>
+									</span>
+									<span>充值历史</span>
+								</a>
+							</li>
+							<li class="li_logo ">
+								<a href="#" class="games_con ">
+									<span>
+										<i class="iconfont iconbangzhu "></i>
+									</span>
+									<span>暴雪游戏点数帮助</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="topPass ">
+				<div class="tick ">
+					<div class="tickinner "></div>
+				</div>
+				<div class="topPass_con ">
+					<a href="# ">
+						<button class="login ">登录</button>
+					</a>
+					<a href="# " class="account ">
+						<img src="img/账户.png " />
+						<span>账户</span>
+					</a>
+					<a href="# " class="account regist ">
+						<img src="img/注册.png " />
+						<span>注册</span>
+					</a>
+				</div>
+			</div>
+		</header>
+			<section class="bg_section ">
+				<div class="bg_poster ">
+					<div class="bg_right ">
+						<img src="https://product.cnc.blzstatic.cn//f9a/7f5bf30fc831da74fb8ae1cf05a1cbe0-overwatch-cn-1000.png " />
+						<div class="bg_list ">
+							<div class="list_head ">
+								<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/overwatch.svg " />
+								<div class="list_title ">
+									<h1>《守望先锋®》</h1>
+									<h2>团队射击游戏</h2>
+								</div>
+							</div>
+							<div class="list_options " id="options">
+								
+									<div class="selected option ">
+										<img src="https://product.cnc.blzstatic.cn//fd2/5721dc3e9a639cfd51101578810eb738-prod-thumb.jpg " />
+										<div>
+											<h5>传奇典藏版</h5>
+											<h4>￥158</h4>
+										</div>
+									</div>
+								
+								
+									<div class="option ">
+										<img src="https://product.cnc.blzstatic.cn//ff4/7316b3042d88bf22d6ca8c5188205aff-prod-thumb.jpg " />
+										<div>
+											<h5>无限畅玩版</h5>
+											<h4>￥98</h4>
+										</div>
+									</div>
+								
+							</div>
+							<div class="buttons ">
+								<ul class="btn ">
+									<li>
+										<a href="# " class="buy ">立即购买</a>
+									</li>
+									<li>
+										<a href="# " class="send ">赠礼</a>
+									</li>
+									<li>
+										<a href="# " class="add ">
+											<span><i class="iconfont iconxinyuan "></i></span>
+											添加至心愿单
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<main class="main ">
+				<div class="container">
+					<section class="awards">
+						<div class="awards_left">
+							<h3>“年度最佳运营游戏奖” - The Game Awards</h3>
+							<p>
+								这个世界需要英雄。与超过4000万*玩家一起加入《守望先锋》的未来战场，从各具特色的士兵、科学家、冒险家和奇人异士中选择你的英雄。扭曲时空、逆反物理、用神奇的力量和武器释放出强大的威力。加入这个终极团队射击游戏，在全球各个著名地点与敌人展开搏斗。*数据来源于公司内部统计以及主要合作伙伴的销售报表。
+							</p>
+						</div>
+						<div class="awards_right">
+							<ul class="right_con">
+								<li>需要互联网连接、暴雪游戏通行证和暴雪战网桌面应用。 </li>
+								<li>
+									<a href="#"> 配置要求 </a>
+								</li>
+								<li>
+									<a href="#"> 商品详情 </a>
+								</li>
+							</ul>
+						</div>
+					</section>
+					<section class="pictures">
+						<h3>为未来而战</h3>
+						<div class="pictures_content">
+							<div class="feature">
+								<img src="https://s1.ax1x.com/2020/10/11/0csmge.png" />
+								<h5>感受超凡体验</h5>
+								<p>
+									加速或减缓时间的流动；装备飞行铠甲，在空中降下毁灭之雨；像幽灵一般神出鬼没，追捕猎物；施展巨龙之力、超凡入圣或重力喷涌，释放巨大威力——每位英雄都有独一无二的，足以扭转战局的本领。
+								</p>
+							</div>
+							<div class="feature">
+								<img src="https://s1.ax1x.com/2020/10/11/0cygFP.png" />
+								<h5>体会英雄，而不是职业</h5>
+								<p>
+									每个英雄都有自己独特的战争见解以及背景故事。你既可以是一名为荣耀而战，拿着火箭大锤的迟暮勇士；也可以是一名机械僧侣，试图消除人类与机械之间的隔阂；还可以是一名聪明的科学家，同时也是一只经过基因改造的大猩猩。还有更多的英雄等着你来发现。								
+								</p>
+							</div>
+							<div class="feature">
+								<img src="https://s1.ax1x.com/2020/10/11/0cyqYV.png" />
+								<h5>齐心协力…为未来而战</h5>
+								<p>
+									团队配合就是生存的第一法则。准确的配合将带来立竿见影的效果，让你用无法阻挡的力量摧毁敌人。
+								</p>
+							</div>
+							<div class="feature">
+								<img src="https://s1.ax1x.com/2020/10/11/0c69T1.png" />
+								<h5>时刻注意调整战略</h5>
+								<p>
+									在你的队伍即将面临溃败时，迅速切换英雄，改变战场的形势。但别忘记了，你的敌人也可以做到同样的事情。全面掌握这个游戏机制，在双方不停的战略转换中获取先机。
+								</p>
+							</div>
+							<div class="feature">
+								<img src="https://s1.ax1x.com/2020/10/11/0c6n0A.png" />
+								<h5>世界就是战场</h5>
+								<p>
+									保护埃及阿努比斯神庙的秘密、护送EMP设备通过伦敦的国王大道，在世界各地的著名地点英勇战斗。每张地图都有独特的设计概念、游戏机制以及团队目标。
+								</p>
+							</div>
+						</div>
+					</section>
+					<section class="pictures">
+						<h3>传奇典藏版</h3>
+						<p>购买《守望先锋》传奇典藏版即可获得以下暴雪游戏赠品：</p>
+						<div class="pictures_content">
+							<div class="feature">
+								<img src="https://s1.ax1x.com/2020/10/11/0c2V6U.png" />
+								<h5>《守望先锋®》 - 5款史诗皮肤与5款传奇皮肤</h5>
+								<p>
+									将精挑细选的5款史诗皮肤与5款传奇皮肤加入你的收藏，其中包括白狼半藏、伯劳安娜和怪客麦克雷，用各种个性化物品来装扮你最喜爱的《守望先锋》英雄。
+								</p>
+							</div>
+							<div class="feature">
+								<img src="https://s1.ax1x.com/2020/10/11/0c2yjS.png" />
+								<h5>《守望先锋®》 - 英雄皮肤</h5>
+								<p>
+									用经典的黑暗守望者莱耶斯或战地指挥官莫里森向最初的守望先锋致敬。还有迷彩“堡垒”、安保女将“法老之鹰”以及滑翔“猎空”！				
+								</p>
+							</div>
+							<div class="feature">
+								<img src="https://s1.ax1x.com/2020/10/11/0cRpjO.png" />
+								<h5>《风暴英雄™》 - “猎空”英雄</h5>
+								<p>
+									在时空枢纽用“猎空”的极速瞬间击倒你的敌人。
+								</p>
+							</div>
+							<div class="feature">
+								<img src="https://s1.ax1x.com/2020/10/11/0cRAUA.png" />
+								<h5>《魔兽世界®》 - 小温斯顿宠物</h5>
+								<p>
+									可爱而又富有智慧，小温斯顿宠物会在你穿梭艾泽拉斯大陆的时候一直陪伴在你左右。
+								</p>
+							</div>
+							<div class="feature">
+								<img src="https://product.cnc.blzstatic.cn//dg/7515/FE9B28DC2B8117BD8E38A9D1248904C509B89CA2.jpg" />
+								<h5>《暗黑破坏神III》 - “天使”之翼</h5>
+								<p>
+									用守望天使之翼穿梭于高阶天堂与烈焰地狱之间，毫不留情地消灭所有恶魔。庇护之地将会传颂你对守望先锋的忠诚服务！
+								</p>
+							</div>
+							<div class="feature">
+								<img src="https:////product.cnc.blzstatic.cn//34/6e9a3735c6e491ce9731cce5a6d7d66b-HSandSC2_card.jpg" />
+								<h5>《星际争霸® II》游戏头像与《炉石传说®》卡背！</h5>
+								<p>
+									有了“猎空”、“死神”、“法老之鹰”、温斯顿、“堡垒”以及“士兵：76”头像，你一定会成为科普卢星区的英雄。换上为英雄量身定做的《守望先锋》主题卡背，在炉石酒馆里迎战你的对手！
+								</p>
+							</div>
+						</div>
+					</section>
+					<section class="requirements">
+						<h3>配置要求</h3>
+						<div class="requirements_con">
+							<ul class="req_head">
+								<li>
+									<a href="" class="windows">
+										<span><i class="iconfont iconwindows"></i></span>
+										<span>Windows</span>
+									</a>
+								</li>
+							</ul>
+							<div class="req_list">
+								<div class="req_list_con">
+									<h3>最低配置</h3>
+									<div class="req_type">
+										<div class="system">
+											<h5>操作系统</h5>
+											<p>
+												 Windows® 7 / Windows® 8 / Windows® 10 64位系统 (或最新版本的 Service Pack)
+											</p>
+										</div>
+										<div class="system">
+											<h5>处理器</h5>
+											<p>
+												Intel® Core™ i3或是 AMD Phenom™ X3 8650
+											</p>
+										</div>
+										<div class="system">
+											<h5>显卡</h5>
+											<p>
+												NVIDIA® GeForce® GTX 460, ATI Radeon™ HD 4850, 或是 Intel® HDGraphics 4400
+											</p>
+										</div>
+										<div class="system">
+											<h5>内存</h5>
+											<p>
+												4 GB RAM
+											</p>
+										</div>
+										<div class="system">
+											<h5>储存空间</h5>
+											<p>
+												30 GB 硬件空间
+											</p>
+										</div>
+										<div class="system">
+											<h5>网络</h5>
+											<p>
+												宽带网络
+											</p>
+										</div>
+										<div class="system">
+											<h5>分辨率</h5>
+											<p>
+												最低 1024 x 768
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="req_list_con">
+									<h3>推荐配置</h3>
+									<div class="req_type">
+										<div class="system">
+											<h5>操作系统</h5>
+											<p>
+												 Windows® 7 / Windows® 8 / Windows® 10 64位系统 (最新版本的 Service Pack)
+											</p>
+										</div>
+										<div class="system">
+											<h5>处理器</h5>
+											<p>
+												Intel® Core™ i5或是 AMD Phenom™ X3处理器及以上
+											</p>
+										</div>
+										<div class="system">
+											<h5>显卡</h5>
+											<p>
+												NVIDIA® GeForce® GTX 660 or AMD Radeon™ HD 7950 或以上
+											</p>
+										</div>
+										<div class="system">
+											<h5>内存</h5>
+											<p>
+												6 GB RAM
+											</p>
+										</div>
+										<div class="system">
+											<h5>储存空间</h5>
+											<p>
+												30 GB 硬件空间
+											</p>
+										</div>
+										<div class="system">
+											<h5>网络</h5>
+											<p>
+												宽带网络
+											</p>
+										</div>
+										<div class="system">
+											<h5>分辨率</h5>
+											<p>
+												最低 1024 x 768
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="details">
+						<h3>商品详情</h3>
+						<div class="details_list">
+							<div class="type">
+								<div class="gener">
+									<h5>类型</h5>
+									<p>团队射击游戏</p>
+								</div>
+								<div class="platforms">
+									<h5>平台</h5>
+									<p>
+										<span><i class="iconfont iconwindows"></i></span>
+										<span>Windows</span>
+									</p>
+								</div>
+							</div>
+							<div class="type">
+								<div class="gener">
+									<h5>支持语言</h5>
+									<ul>
+										<li>简体中文</li>
+									</ul>
+								</div>
+								<div class="platforms">
+									<h5>可使用的地区</h5>
+									<ul>
+										<li>中国</li>
+									</ul>
+								</div>
+							</div>
+							<div class="type">
+								<div class="gener">
+									<h5>商品要求</h5>
+									<ul>
+										<li>需要互联网连接、暴雪游戏通行证和暴雪战网桌面应用。</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</main>
+		<footer class="clear ">
+			<div class="footer_content ">
+				<div class="f_logo ">
+					<a href="# "><img src="https://s1.ax1x.com/2020/10/09/0rEITH.png "/></a>
+				</div>
+				<div class="f_ul ">
+				<ul>
+					<li>
+						<a href="# ">工作机会</a>|
+					</li>
+					<li>
+						<a href="# ">关于</a>|
+					</li>
+					<li>
+						<a href="# ">支持</a>|
+					</li>
+					<li>
+						<a href="# ">媒体中心</a>|
+					</li>
+					<li>
+						<a href="# ">API</a>|
+					</li>
+					<li>
+						<a href="# ">安全中心</a>
+					</li>
+				</ul>
+				</div>
+				<p>©2020 暴雪娱乐有限公司版权所有。</p>
+				<p>在此提及的其他所有<a href="# "><b>商标</b></a>均是其各自所有人的财产。</p>
+				<p>由上海网之易网络科技发展有限公司运营。</p>
+				<div class="f_ul2 ">
+					<ul>
+						<li>
+							<a href="# ">隐私</a>|
+						</li>
+						<li>
+							<a href="# ">法律</a>|
+						</li>
+						<li>
+							<a href="# ">条款</a>
+						</li>
+					</ul>
+				</div>
+				<p>
+					文网游进字[2016]0025号&nbsp;|&nbsp;
+					<a href="# ">沪网文号〔2017〕9633-727号</a>&nbsp;|&nbsp;
+					<a href="# ">增值电信业务经营许可证编号：沪B2－20080012</a>&nbsp;|&nbsp;
+					沪ICP备：<a href="# ">沪B2－20080012</a>
+				</p>
+				<p>
+					互联网违法和不良信息举报电话：0571-28090163 &nbsp;&nbsp;|&nbsp;&nbsp;
+					沪公网安备 31011502022167号&nbsp;|&nbsp;
+					<a href="# ">网上有害信息专区</a>
+				</p>
+				<p>
+					<a href="# "><b>适龄提示：适合13岁及以上使用 &nbsp;家长监护工程></b></a>&nbsp;|&nbsp;
+					<a href="# "><b>上海市网络游戏行业自律公约</b></a>
+				</p>
+				<p>上海市张江高科技园区碧波路690号5号楼301-A&nbsp;|&nbsp;客服电话：0571-28090163</p>
+			</div>
+		</footer>
+		<a href="# " class="top ">
+			<i class="iconfont iconxiangshang1 "></i>
+		</a>
+	</body>
+</html>

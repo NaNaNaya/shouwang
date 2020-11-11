@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>商城</title>
+		<link rel="stylesheet" href="https://at.alicdn.com/t/font_2080438_mpa3ldsohh.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/store.css" />
+		<script type="text/javascript" src="js/store.js"></script>
+	</head>
+
+	<body>
+		<header class="top_nav">
+			<nav class="blue_nav">
+				<a href="#" class="top_logo"></a>
+				<div class="topNav_items">
+					<a href="#" class="topNav_shop">
+						<span>商城</span>
+					</a>
+				</div>
+				<div class="topNav_right">
+					<a href="#" class="topNav_support">
+						<span>支持</span>
+					</a>
+					<a href="#" class="topNav_pass">
+						<span>我的账户</span>
+						<span class="topIconClick">
+							<i class="iconfont iconarrow-down"></i>
+						</span>
+					</a>
+				</div>
+			</nav>
+			<nav class="next_nav">
+				<ul>
+					<li class="ul_item">
+						<a href="main.html" target="_blank">
+							<span>
+								<i class="iconfont iconzhuye"></i>
+							</span>
+							<span>主页</span>
+						</a>
+					</li>
+					<li class="ul_item">
+						<a class="active nav_btn">
+							<span>游戏</span>
+							<span class="topIconClick">
+								<i class="iconfont iconarrow-down"></i>
+							</span>
+						</a>
+						<ul class="menu_games">
+							<li style="margin-left: 10px;">暴雪游戏</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/world-of-warcraft.svg" />
+									<span>魔兽世界</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/overwatch.svg" />
+									<span>守望先锋</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/diablo-iii.svg" />
+									<span>暗黑破坏神|||</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/hearthstone.svg" />
+									<span>炉石传说</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/heroes-of-the-storm.svg" />
+									<span>风暴英雄</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/starcraft-ii.svg" />
+									<span>星际争霸||</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/starcraft-remastered.svg" />
+									<span>星际争霸</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/warcraft-iii.svg" />
+									<span>魔兽争霸|||</span>
+								</a>
+							</li>
+						</ul>
+						
+					</li>
+					<li class="ul_item">
+						<a class="active nav_btn">
+							<span>服务</span>
+							<span class="topIconClick">
+								<i class="iconfont iconarrow-down"></i>
+							</span>
+						</a>
+						<ul class="menu_games">
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<span>
+										<i class="iconfont iconbiaoqian"></i>
+									</span>
+									<span>战网昵称修改服务</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<span>
+										<i class="iconfont iconjia"></i>
+									</span>
+									<span>使用兑换码</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li class="ul_item">
+						<a href="#">
+							<span>周边商城</span>
+							<span class="topIconClick">
+								<i class="iconfont iconfenxiang"></i>
+							</span>
+						</a>
+					</li>
+					<li class="ul_item search">
+						<a href="#" id="text">
+							<span>
+								<i class="iconfont iconsousuo"></i>
+							</span>
+							<input placeholder="搜索商城" />
+						</a>
+					</li>
+					<li class="ul_item">
+						<a href="#">
+							<span>
+								<i class="iconfont iconxinyuan"></i>
+							</span>
+							<span>心愿单</span>
+						</a>
+					</li>
+					<li class="ul_item">
+						<a class="active nav_btn">
+							<span>暴雪游戏点数</span>
+							<span class="topIconClick">
+								<i class="iconfont iconarrow-down"></i>
+							</span>
+						</a>
+						<ul class="menu_games">
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<span>
+										<i class="iconfont iconjia"></i>
+									</span>
+									<span>充值点数</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<span>
+										<i class="iconfont iconfenxiang1"></i>
+									</span>
+									<span>赠送点数</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<span>
+										<i class="iconfont iconduihuan"></i>
+									</span>
+									<span>兑换点卡</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<span>
+										<i class="iconfont iconlishi1"></i>
+									</span>
+									<span>充值历史</span>
+								</a>
+							</li>
+							<li class="li_logo">
+								<a href="#" class="games_con">
+									<span>
+										<i class="iconfont iconbangzhu"></i>
+									</span>
+									<span>暴雪游戏点数帮助</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+			<div class="topPass">
+				<div class="tick">
+					<div class="tickinner"></div>
+				</div>
+				<div class="topPass_con">
+					<a href="#">
+						<button class="login">登录</button>
+					</a>
+					<a href="#" class="account">
+						<img src="img/账户.png" />
+						<span>账户</span>
+					</a>
+					<a href="#" class="account regist">
+						<img src="img/注册.png" />
+						<span>注册</span>
+					</a>
+				</div>
+			</div>
+		</header>
+		<!----轮播----->
+		<div id="banner" class="clear">
+			<div id="pre">
+				<i class="iconfont iconleft"></i>
+			</div>
+			<div id="next">
+				<i class="iconfont iconzuoyou1"></i>
+			</div>
+			<div id="list" style="left:-1349px">
+				<a href="#"><img src="img/轮播2.png" /></a>
+				<a href="#"><img src="img/轮播1.png" /></a>
+				<a href="#"><img src="img/轮播2.png" /></a>
+				<a href="#"><img src="img/轮播1.png" /></a>
+			</div>
+			<div id="dot">
+				<span data-index="0" class="on"></span>
+				<span data-index="1"></span>
+			</div>
+		</div>
+		<!--主体内容-->
+		<main class="main_content clear">
+			<!--游戏logo-->
+			<div class="bz_logo">
+				<ul class="logo_ul">
+					<li class="li_title">
+						<span>暴雪游戏</span>
+					</li>
+					<li>
+						<a href="#" title="魔兽世界">
+							<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/world-of-warcraft.svg" />
+						</a>
+					</li>
+					<li >
+						<a href="#" title="守望先锋">
+							<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/overwatch.svg" />
+						</a>
+					</li>
+					<li>
+						<a href="#" title="暗黑破坏神III">
+							<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/diablo-iii.svg" />
+						</a>
+					</li>
+					<li >
+						<a href="#" title="炉石传说">
+							<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/hearthstone.svg" />
+						</a>
+					</li>
+					<li>
+						<a href="#" title="风暴英雄">
+							<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/heroes-of-the-storm.svg" />
+						</a>
+					</li>
+					<li >
+						<a href="#" title="星际争霸II">
+							<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/starcraft-ii.svg" />
+						</a>
+					</li>
+					<li>
+						<a href="#" title="星际争霸">
+							<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/starcraft-remastered.svg" />
+						</a>
+					</li>
+					<li >
+						<a href="#" title="魔兽争霸III">
+							<img src="https://shopbnet.cnc.blzstatic.cn/static/4.31.8/images/family-icons/warcraft-iii.svg" />
+						</a>
+					</li>
+				</ul>
+			</div>
+			<!--推荐游戏-->
+			<section class="recommend">
+				<div class="recom_con">
+				<h1 class="">推荐</h1>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="img/推荐1.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/推荐2.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/推荐3.png" />
+						</a>
+					</li>
+					<li>
+						<a href="purchase.html" target="_blank">
+							<img src="img/推荐4.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/推荐5.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/推荐6.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/推荐7.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/推荐8.png" />
+						</a>
+					</li>
+				</ul>
+				</div>
+			</section>
+			<!--精选游戏-->
+			<section class="recommend">
+				<div class="recom_con">
+				<h1 class="">精选</h1>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="img/推荐1.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/精选2.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/精选3.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/精选4.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/精选5.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/精选6.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/精选7.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/精选8.png" />
+						</a>
+					</li>
+				</ul>
+				</div>
+			</section>
+			<!--当下流行-->
+			<section class="recommend">
+				<div class="recom_con">
+				<h1 class="">当下流行</h1>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="https://s1.ax1x.com/2020/10/09/0Dxh1H.png"/>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://s1.ax1x.com/2020/10/09/0Dxf9e.png"/>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://s1.ax1x.com/2020/10/09/0rSZi8.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://s1.ax1x.com/2020/10/09/0rSeJS.png">
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://s1.ax1x.com/2020/10/09/0rSqSg.png"/>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://s1.ax1x.com/2020/10/09/0rpk6J.png"/>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://s1.ax1x.com/2020/10/09/0rpah8.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/推荐1.png" />
+						</a>
+					</li>
+				</ul>
+				</div>
+			</section>
+			<!--热门赠礼-->
+			<section class="recommend">
+				<div class="recom_con">
+				<h1 class="">热门赠礼</h1>
+				<ul>
+					<li>
+						<a href="#">
+							<img src="https://s1.ax1x.com/2020/10/09/0rpah8.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://s1.ax1x.com/2020/10/09/0rCx0A.png"/>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://s1.ax1x.com/2020/10/09/0rpk6J.png"/>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/推荐1.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/推荐8.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/精选6.png" />
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://s1.ax1x.com/2020/10/09/0rCYJf.png"/>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="https://s1.ax1x.com/2020/10/09/0rCUSS.png"/>
+						</a>
+					</li>
+				</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="clear">
+			<div class="footer_content">
+				<div class="f_logo">
+					<a href="#"><img src="https://s1.ax1x.com/2020/10/09/0rEITH.png"/></a>
+				</div>
+				<div class="f_ul">
+				<ul>
+					<li>
+						<a href="#">工作机会</a>|
+					</li>
+					<li>
+						<a href="#">关于</a>|
+					</li>
+					<li>
+						<a href="#">支持</a>|
+					</li>
+					<li>
+						<a href="#">媒体中心</a>|
+					</li>
+					<li>
+						<a href="#">API</a>|
+					</li>
+					<li>
+						<a href="#">安全中心</a>
+					</li>
+				</ul>
+				</div>
+				<p>©2020 暴雪娱乐有限公司版权所有。</p>
+				<p>在此提及的其他所有<a href="#"><b>商标</b></a>均是其各自所有人的财产。</p>
+				<p>由上海网之易网络科技发展有限公司运营。</p>
+				<div class="f_ul2">
+					<ul>
+						<li>
+							<a href="#">隐私</a>|
+						</li>
+						<li>
+							<a href="#">法律</a>|
+						</li>
+						<li>
+							<a href="#">条款</a>
+						</li>
+					</ul>
+				</div>
+				<p>
+					文网游进字[2016]0025号&nbsp;|&nbsp;
+					<a href="#">沪网文号〔2017〕9633-727号</a>&nbsp;|&nbsp;
+					<a href="#">增值电信业务经营许可证编号：沪B2－20080012</a>&nbsp;|&nbsp;
+					沪ICP备：<a href="#">沪B2－20080012</a>
+				</p>
+				<p>
+					互联网违法和不良信息举报电话：0571-28090163 &nbsp;&nbsp;|&nbsp;&nbsp;
+					沪公网安备 31011502022167号&nbsp;|&nbsp;
+					<a href="#">网上有害信息专区</a>
+				</p>
+				<p>
+					<a href="#"><b>适龄提示：适合13岁及以上使用 &nbsp;家长监护工程></b></a>&nbsp;|&nbsp;
+					<a href="#"><b>上海市网络游戏行业自律公约</b></a>
+				</p>
+				<p>上海市张江高科技园区碧波路690号5号楼301-A&nbsp;|&nbsp;客服电话：0571-28090163</p>
+			</div>
+		</footer>
+		<a href="#" class="top">
+			<i class="iconfont iconxiangshang1"></i>
+		</a>
+	</body>
+
+</html>
